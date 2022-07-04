@@ -1,10 +1,17 @@
-import React from 'react';
-import './App.css';
+//components
+import TopSlider from './components/TopSlider';
+import Main from './components/Main'
+import Navigation from './components/Navigation';
+//styles
+import './css/App.css'
 
 const App = () => {
   return (
     <>
-
+      <TopSlider />
+      <Main>
+        <Navigation />
+      </Main>
     </>
   );
 }
