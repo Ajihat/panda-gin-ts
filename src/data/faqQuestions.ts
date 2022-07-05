@@ -1,4 +1,23 @@
-export const faqQuestions = {
+interface SingleQuestion {
+    id: number,
+    question: string,
+    answer: string
+}
+
+interface FaqQuestions {
+    orders: SingleQuestion[],
+    payments: SingleQuestion[],
+    delivery: SingleQuestion[],
+    complaint: SingleQuestion[],
+    return: SingleQuestion[],
+    warranty: SingleQuestion[],
+    fake: SingleQuestion[],
+    about: SingleQuestion[],
+}
+
+
+
+export const faqQuestions: FaqQuestions = {
     orders: [
         {
             id: 1,
