@@ -352,4 +352,181 @@ html {
 .navlink:hover {
   color: #94e5c8;
 }
+
+.innercontainer {
+  padding-top: 57px;
+}
+
+.shop, .faq {
+  padding: 120px 100px;
+}
+
+.header {
+  text-align: center;
+  letter-spacing: .6px;
+}
+
+.header.header--left {
+  text-align: left;
+}
+
+.header.header--left .header__bottom-line {
+  left: 0px;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.header.header--right {
+  text-align: right;
+}
+
+.header.header--right .header__bottom-line {
+  left: initial;
+  right: 0px;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.header__small-title {
+  position: relative;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 300;
+  margin: 15px 0px;
+  padding-bottom: 10px;
+}
+
+.header__big-title {
+  font-family: "Playfair display", sans-serif;
+  font-size: 64px;
+  font-weight: 500;
+}
+
+.header__bottom-line {
+  position: absolute;
+  width: 40px;
+  height: 1px;
+  bottom: 0;
+  left: 50%;
+  background-color: black;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-weight: 400;
+}
+
+.header__text {
+  font-family: "Work Sans", sans-serif;
+  margin: 24px auto 24px auto;
+  font-size: 2.4rem;
+  font-weight: 300;
+  line-height: 150%;
+  max-width: 700px;
+}
+
+.curtain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: white;
+  opacity: 1;
+  z-index: 10;
+  -webkit-animation-name: curtain-opacity;
+          animation-name: curtain-opacity;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.curtain__icon {
+  display: block;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  width: 130px;
+  opacity: 0;
+  -webkit-animation-name: pandaHead-movement;
+          animation-name: pandaHead-movement;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes pandaHead-movement {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    opacity: 1;
+  }
+}
+
+@keyframes pandaHead-movement {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes curtain-opacity {
+  0% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes curtain-opacity {
+  0% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 /*# sourceMappingURL=App.css.map */

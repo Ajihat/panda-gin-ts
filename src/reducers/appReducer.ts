@@ -16,5 +16,11 @@ export const appReducer = (state: IAppState, action: { type: string }) => {
             isCurtainOpen: true
         }
     }
+    if (action.type === CLOSE_CURTAIN) {
+        return {
+            ...state,
+            isCurtainOpen: false
+        }
+    }
 }
 
