@@ -1,19 +1,7 @@
-interface SingleQuestion {
-    id: number,
-    question: string,
-    answer: string
-}
+//interfaces
+import { FaqQuestions } from '../interfaces/interfaces'
 
-interface FaqQuestions {
-    orders: SingleQuestion[],
-    payments: SingleQuestion[],
-    delivery: SingleQuestion[],
-    complaint: SingleQuestion[],
-    return: SingleQuestion[],
-    warranty: SingleQuestion[],
-    fake: SingleQuestion[],
-    about: SingleQuestion[],
-}
+
 
 
 

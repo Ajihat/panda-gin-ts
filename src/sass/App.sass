@@ -1,11 +1,3 @@
-*
-    margin: 0
-    padding: 0
-    box-sizing: border-box
-
-html
-    font-size: 10px
-
 @import '_variables'
 @import '_mixins'
 @import '_TopSlider'
@@ -19,3 +11,22 @@ html
 @import '_Pages'
 @import '_Header'
 @import '_Curtain'
+@import '_FaqCategory'
+@import '_FaqElement'
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+html
+    font-size: 10px
+
+::-webkit-scrollbar
+    width: 5px
+
+::-webkit-scrollbar-track
+    background: $secondary-color
+
+::-webkit-scrollbar-thumb
+    background: $main-color
